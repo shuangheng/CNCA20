@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimary1">#00C7AC</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorPrimaryDark3">#00331B</color>
+    <color name="colorPrimaryDark2">#F2F2F2</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="user_icon_4">#ffe91e63</color><!-- pink 500 -->
+    <color name="profile_badge_1">#ffff6d00</color><!-- Orange -->
+</resources>

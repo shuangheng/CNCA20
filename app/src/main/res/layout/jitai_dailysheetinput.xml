@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:showIn="@layout/content_dailysheetinput"
+        tools:context=".DailySheetInputActivity">
+
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/lin_margin">
+        <android.support.design.widget.TextInputEditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/ji_hao"
+                android:inputType="text"
+                android:textSize="30sp"
+                android:maxLines="1"
+                android:layout_weight="1"/>
+        <android.support.design.widget.TextInputEditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/xun_huan_shi"
+                android:inputType="number"
+                android:maxLines="1"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"/>
+
+        <android.support.design.widget.TextInputEditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/dan_pan_shu"
+                android:inputType="number"
+                android:maxLines="1"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"/>
+    </LinearLayout>
+
+
+</LinearLayout>

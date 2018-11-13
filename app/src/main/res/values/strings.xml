@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CNC-A20</string>
+    <string name="action_settings">Settings</string>
+    <string name="ji_hao">机号</string>
+    <string name="xun_huan_shi">循环时(s)</string>
+    <string name="biao_chan">标产</string>
+    <string name="dan_pan_shu">单盘数</string>
+    <string name="pan_shu">盘数</string>
+    <string name="jia_san_shu">+ 散数</string>
+    <string name="jian_san_shu">-散数</string>
+    <string name="bu_liang_shu">不良数</string>
+    <string name="result">结果</string>
+    <string name="input">输入</string>
+    <string name="add">添加</string>
+    <string name="delete">删除</string>
+    <string name="jian_shi">件时 (s)</string>
+    <string name="dan_pan">单盘</string>
+</resources>
