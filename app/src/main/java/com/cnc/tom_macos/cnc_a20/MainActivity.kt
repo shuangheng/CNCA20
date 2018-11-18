@@ -54,10 +54,10 @@ class MainActivity : AppCompatActivity() {
                 val result = "$resultNum/${formatDouble(resultH.toString())}"
 
                 //if (mapTextView["$i-3"] != null) {
-                    mapTextView["$i-3"]?.text = formatDouble(biaoChan.toString())
+                mapTextView["$i-3"]?.text = formatDouble(biaoChan.toString())
                 //}
                 //if (mapTextView["$i-8"] != null) {
-                    mapTextView["$i-8"]?.text = result
+                mapTextView["$i-8"]?.text = result
                 //}
             }
         }
@@ -81,8 +81,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun jumpActivity(activity: AppCompatActivity) {
-            val intent: Intent = Intent(this, activity::class.java)
-            startActivity(intent)
+        val intent: Intent = Intent(this, activity::class.java)
+        startActivity(intent)
     }
 
 
@@ -155,7 +155,7 @@ class MainActivity : AppCompatActivity() {
     private fun setViewText() {
         for ((key, view) in mapTextView) {
             val str by Preference(this, key, "")
-             view.text = str
+            view.text = str
         }
     }
 
@@ -169,14 +169,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun mapAddTextView(viewGroups: ViewGroup) {
-//
         for (i in 0 until viewGroups.childCount) {
             val viewGroup = viewGroups.getChildAt(i)
             when (viewGroup) {
                 is ViewGroup -> addTextView(i, viewGroup)
             }
             viewNub = 0
-            Log.w("father-view", "$i")
+            //Log.w("father-view", "$i")
         }
     }
 
@@ -186,7 +185,7 @@ class MainActivity : AppCompatActivity() {
             val view = viewGroup.getChildAt(i)
             if (view is ViewGroup) {
                 addTextView(key, view)
-                Log.w("father-view-2", "$i")
+                //Log.w("father-view-2", "$i")
             } else {
                 when (view) {
                     is TextInputEditText -> {
@@ -199,13 +198,14 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
                 val sh by Preference(this, "$key-$i", "")
-                Log.w("addTextView", "$key-$viewNub")
-                Log.w("prefrence========-===", "$sh-----")
+                //Log.w("addTextView", "$key-$viewNub")
+                //Log.w("prefrence========-===", "$sh-----")
             }
         }
 
     }
 
+    //str 转换成Int
     private fun toInt(textView: TextView?): Int {
         return if (textView != null) {
             val str = textView.text.toString()
@@ -219,9 +219,10 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    //当str是无限循环小数时截取字符串
     private fun formatDouble(str: String): String {
-        return if (str.length > 6) {
-            str.substring(0, str.indexOf(".") + 3)
+        return if (str.length > 6 && str.contains(".")) {
+            str.substring(0, str.indexOf(".") + 2)
         } else {
             str
         }

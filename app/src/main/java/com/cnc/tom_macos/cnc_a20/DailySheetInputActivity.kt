@@ -45,6 +45,7 @@ class DailySheetInputActivity : AppCompatActivity() {
                 Toast.LENGTH_SHORT
             ).show()
 
+            finish()
             //onKeyDown(KeyEvent.KEYCODE_BACK, null)
             /*onPause()
             SystemClock.sleep(1000)
