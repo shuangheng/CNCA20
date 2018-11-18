@@ -54,10 +54,17 @@ class MainActivity : AppCompatActivity() {
                 val result = "$resultNum/${formatDouble(resultH.toString())}"
 
                 //if (mapTextView["$i-3"] != null) {
+<<<<<<< HEAD
                 mapTextView["$i-3"]?.text = formatDouble(biaoChan.toString())
                 //}
                 //if (mapTextView["$i-8"] != null) {
                 mapTextView["$i-8"]?.text = result
+=======
+                    mapTextView["$i-3"]?.text = formatDouble(biaoChan.toString())
+                //}
+                //if (mapTextView["$i-8"] != null) {
+                    mapTextView["$i-8"]?.text = result
+>>>>>>> 73b7012d97855bf10998677eaa7a5f7ea9414ce1
                 //}
             }
         }
@@ -81,8 +88,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun jumpActivity(activity: AppCompatActivity) {
+<<<<<<< HEAD
         val intent: Intent = Intent(this, activity::class.java)
         startActivity(intent)
+=======
+            val intent: Intent = Intent(this, activity::class.java)
+            startActivity(intent)
+>>>>>>> 73b7012d97855bf10998677eaa7a5f7ea9414ce1
     }
 
 
@@ -155,7 +167,11 @@ class MainActivity : AppCompatActivity() {
     private fun setViewText() {
         for ((key, view) in mapTextView) {
             val str by Preference(this, key, "")
+<<<<<<< HEAD
             view.text = str
+=======
+             view.text = str
+>>>>>>> 73b7012d97855bf10998677eaa7a5f7ea9414ce1
         }
     }
 
